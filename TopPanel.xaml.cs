@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace MyApp
 {
@@ -7,6 +8,11 @@ namespace MyApp
         public TopPanel()
         {
             InitializeComponent();
+        }
+
+        private void UserBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            LoginPopup.IsOpen = true;
         }
     }
 }

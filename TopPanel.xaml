@@ -18,16 +18,36 @@
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Orientation="Horizontal">
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Gold" Content="File"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Gold" Content="File"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Gold" Content="File"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Gold" Content="File"/>
+                
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File"/>
             </StackPanel>
 
             <StackPanel Grid.Column="2" Orientation="Horizontal">
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Gold" Content="Roll up"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Gold" Content="Screen"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Gold" Content="Exit"/>
+
+                <Button Name="UserBtn" Click="UserBtn_Click" Content="👤" Height="25" Margin="3" Width="24" FontSize="15">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Popup Name="LoginPopup" PlacementTarget="{Binding ElementName=UserBtn}" Placement="Bottom" StaysOpen="False">
+                    <Border Background="White" Padding="10">
+                        <StackPanel Width="200" Height="300">
+                            <TextBox Text="Login"  Margin="5"/>
+                            <PasswordBox  Margin="5"/>
+                            <Button Content="Sign in"  Margin="5"/>
+                        </StackPanel>
+                    </Border>
+                </Popup>
+
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Roll up"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Screen"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Exit"/>
             </StackPanel>
         </Grid>
     </Grid>

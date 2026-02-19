@@ -18,16 +18,16 @@
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Orientation="Horizontal">
-                
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File"/>
+
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File" Cursor="Hand"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File" Cursor="Hand"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File" Cursor="Hand"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File" Cursor="Hand"/>
             </StackPanel>
 
             <StackPanel Grid.Column="2" Orientation="Horizontal">
 
-                <Button Name="UserBtn" Click="UserBtn_Click" Content="👤" Height="25" Margin="3" Width="24" FontSize="15">
+                <Button Name="UserBtn" Click="UserBtn_Click" Content="👤" Height="25" Margin="3" Width="24" FontSize="15" Cursor="Hand">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="5"/>
@@ -37,7 +37,7 @@
 
                 <Popup Name="LoginPopup" PlacementTarget="{Binding ElementName=UserBtn}" Placement="Bottom" StaysOpen="False">
                     <Border Background="White" Padding="10">
-                        <StackPanel Width="200" Height="300">
+                        <StackPanel Width="200" Height="100">
                             <TextBox Text="Login"  Margin="5"/>
                             <PasswordBox  Margin="5"/>
                             <Button Content="Sign in"  Margin="5"/>
@@ -45,10 +45,33 @@
                     </Border>
                 </Popup>
 
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Roll up"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Screen"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Exit"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Roll up" Cursor="Hand"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Screen" Cursor="Hand"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Exit" Cursor="Hand"/>
             </StackPanel>
         </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button Content="Add Train" Height="30" Width="75" Margin="2" Background="LightGreen">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Delete Train" Height="30" Width="75" Margin="2" Background="LightSalmon">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
     </Grid>
 </UserControl>

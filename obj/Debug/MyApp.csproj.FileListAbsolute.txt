@@ -17,3 +17,5 @@ Z:\VisualStudio\MyProject\MyApp\obj\Debug\MyApp.csproj.CoreCompileInputs.cache
 Z:\VisualStudio\MyProject\MyApp\obj\Debug\MyApp.exe
 Z:\VisualStudio\MyProject\MyApp\obj\Debug\MyApp.pdb
 Z:\VisualStudio\MyProject\MyApp\obj\Debug\MyApp.exe.config
+Z:\VisualStudio\MyProject\MyApp\obj\Debug\Content.g.cs
+Z:\VisualStudio\MyProject\MyApp\obj\Debug\Content.baml

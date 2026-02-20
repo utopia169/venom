@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "Z:\\VisualStudio\\MyProject\\MyApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|z:\\visualstudio\\myproject\\myapp\\toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\toppanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:toppanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|z:\\visualstudio\\myproject\\myapp\\content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|z:\\visualstudio\\myproject\\myapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|z:\\visualstudio\\myproject\\myapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\traincard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:traincard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|z:\\visualstudio\\myproject\\myapp\\traincard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:traincard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -51,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TopPanel.xaml",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\MyApp\\TopPanel.xaml",
               "RelativeDocumentMoniker": "TopPanel.xaml",
@@ -64,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Content.xaml",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\MyApp\\Content.xaml",
               "RelativeDocumentMoniker": "Content.xaml",
@@ -77,20 +77,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TopPanel.xaml.cs",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\MyApp\\TopPanel.xaml.cs",
               "RelativeDocumentMoniker": "TopPanel.xaml.cs",
-              "ToolTip": "Z:\\VisualStudio\\MyProject\\MyApp\\TopPanel.xaml.cs*",
-              "RelativeToolTip": "TopPanel.xaml.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "ToolTip": "Z:\\VisualStudio\\MyProject\\MyApp\\TopPanel.xaml.cs",
+              "RelativeToolTip": "TopPanel.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T18:11:57.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\MyApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -98,12 +98,11 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:45:37.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:45:37.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "TrainCard.cs",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\MyApp\\TrainCard.cs",
               "RelativeDocumentMoniker": "TrainCard.cs",
@@ -111,8 +110,7 @@
               "RelativeToolTip": "TrainCard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:31:12.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T17:31:12.81Z"
             }
           ]
         }

@@ -58,13 +58,22 @@
             </Grid.ColumnDefinitions>
         </Grid>
         <StackPanel Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal">
-            <Button Content="Add Train" Height="30" Width="75" Margin="2" Background="LightGreen" Click="AddTrain_Click">
+            <Button Content="Add Train" Name="AddTrainBtn" Height="30" Width="75" Margin="2" Background="LightGreen" Click="AddTrainClick">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
                     </Style>
                 </Button.Resources>
             </Button>
+            <Popup Name="CreateTrainPopup" PlacementTarget="{Binding ElementName=AddTrainBtn}" Placement="Bottom" StaysOpen="False">
+                <Border Background="Gray" CornerRadius="5">
+                    <StackPanel Width="200">
+                        <TextBlock Text="Enter train name" Margin="0,0,0,4" HorizontalAlignment="Center"/>
+                        <TextBox x:Name="TrainNameTextBox" Width="180" Height="25" Margin="0,0,0,10" />
+                        <Button Content="Add" Width="100" Height="25" Click="ConfirmAddTrain_Click"/>
+                    </StackPanel>
+                </Border>
+            </Popup>
             <Button Content="Delete Train" Height="30" Width="75" Margin="2" Background="LightSalmon">
                 <Button.Resources>
                     <Style TargetType="Border">

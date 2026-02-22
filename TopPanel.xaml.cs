@@ -26,14 +26,28 @@ namespace MyApp
             string selectedDate = TrainDataPicker.SelectedDate.HasValue
                 ? TrainDataPicker.SelectedDate.Value.ToString("dd.MM.yyyy")
                 : DateTime.Now.ToString("dd.MM.yyyy");
+            string trainEmoji = "🏋️";
 
-            var MainWindow = Window.GetWindow(this) as MainWindow;
+            if (selectedType.Contains("Chest workout") || selectedType.Contains("Back workout"))
+                trainEmoji = "🏋️";
+            else if (selectedType.Contains("Leg workout"))
+                trainEmoji = "🦵";
+            else if (selectedType.Contains("Arm workout"))
+                trainEmoji = "💪";
+            else if (selectedType.Contains("Shoulder workout"))
+                trainEmoji = "🦾";
+            else if (selectedType.Contains("Cardio workout"))
+                trainEmoji = "🏃‍";
+
+                var MainWindow = Window.GetWindow(this) as MainWindow;
+
             if (MainWindow != null) 
             {
                 MainWindow.Trains.Add(new TrainCard
                 {
                     Date = selectedDate,
                     Type = selectedType,
+                    Emoji = trainEmoji,
                 });
             }
             CreateTrainPopup.IsOpen = false;

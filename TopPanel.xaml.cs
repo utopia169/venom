@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace MyApp
@@ -19,19 +20,23 @@ namespace MyApp
 
         private void ConfirmAddTrain_Click(object sender, RoutedEventArgs e)
         {
-            string newTrainName = TrainNameTextBox.Text;
-            if (!string.IsNullOrWhiteSpace(newTrainName))
+            var selectedTypeItem = TrainigTypeComboBox.SelectedItem as ComboBoxItem;
+            string selectedType = selectedTypeItem.Content.ToString();
+
+            string selectedDate = TrainDataPicker.SelectedDate.HasValue
+                ? TrainDataPicker.SelectedDate.Value.ToString("dd.MM.yyyy")
+                : DateTime.Now.ToString("dd.MM.yyyy");
+
+            var MainWindow = Window.GetWindow(this) as MainWindow;
+            if (MainWindow != null) 
             {
-                var mainWindow = Window.GetWindow(this) as MainWindow;
-                if (mainWindow != null)
-                    mainWindow.Trains.Add(new TrainCard
-                    { Name = newTrainName });
-                TrainNameTextBox.Text = string.Empty;
-                CreateTrainPopup.IsOpen = false;
+                MainWindow.Trains.Add(new TrainCard
+                {
+                    Date = selectedDate,
+                    Type = selectedType,
+                });
             }
-            //else {
-            //    MessaageBox.Show("fdds");
-            //}
+            CreateTrainPopup.IsOpen = false;
         }
     }
 }

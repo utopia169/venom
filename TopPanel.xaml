@@ -66,21 +66,24 @@
                 </Button.Resources>
             </Button>
             <Popup Name="CreateTrainPopup" PlacementTarget="{Binding ElementName=AddTrainBtn}" Placement="Bottom" StaysOpen="False">
-                <Border Background="Gray" CornerRadius="5">
-                    <StackPanel Width="200">
-                        <TextBlock Text="Enter train name" Margin="0,0,0,4" HorizontalAlignment="Center"/>
-                        <TextBox x:Name="TrainNameTextBox" Width="180" Height="25" Margin="0,0,0,10" />
-                        <Button Content="Add" Width="100" Height="25" Click="ConfirmAddTrain_Click"/>
+                <Border Background="White" BorderBrush="Gray" BorderThickness="3" CornerRadius="1">
+                    <StackPanel Width="220">
+                        <TextBlock Text="Training data" Margin="0,0,0,4" HorizontalAlignment="Center"/>
+                        <DatePicker x:Name="TrainDataPicker" Margin="0,0,0,15"/>
+
+                        <TextBlock Text="Training type" Margin="0,0,0,5"/>
+                        <ComboBox x:Name="TrainigTypeComboBox">
+                            <ComboBoxItem Content="Chest workout" IsSelected="True"/>
+                            <ComboBoxItem Content="Back workout"/>
+                            <ComboBoxItem Content="Leg workout"/>
+                            <ComboBoxItem Content="Arm workout"/>
+                            <ComboBoxItem Content="Shoulder workout"/>
+                            <ComboBoxItem Content="Cardio workout"/>
+                        </ComboBox>
+                        <Button Content="Add card" Width="100" Height="25" Click="ConfirmAddTrain_Click" Margin="0,0,0,3"/>
                     </StackPanel>
                 </Border>
             </Popup>
-            <Button Content="Delete Train" Height="30" Width="75" Margin="2" Background="LightSalmon">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="5"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MyApp"
              mc:Ignorable="d" 
-             Height="70" d:DesignWidth="800" Background="White">
-    <Grid>
+             Height="70" d:DesignWidth="800" Background="#F0F2F5">
+    <Grid MouseLeftButtonDown="TopPanel_MouseLeftButtonDown" Background="#F0F2F5">
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
             <RowDefinition Height="35"/>
@@ -27,27 +27,59 @@
 
             <StackPanel Grid.Column="2" Orientation="Horizontal">
 
-                <Button Name="UserBtn" Click="UserBtn_Click" Content="👤" Height="25" Margin="3" Width="24" FontSize="15" Cursor="Hand">
+                <Button Name="UserBtn" Click="UserBtn_Click" 
+                        FontFamily="Segoe MDL2 Assets" 
+                        Content="&#xE77B;" 
+                        Height="25"  
+                        Margin="3,3,10,3" 
+                        Width="40" 
+                        FontSize="20" 
+                        Cursor="Hand" 
+                        HorizontalContentAlignment="Center" 
+                        VerticalContentAlignment="Top">
                     <Button.Resources>
                         <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="5"/>
+                            <Setter Property="CornerRadius" Value="3"/>
                         </Style>
                     </Button.Resources>
                 </Button>
 
                 <Popup Name="LoginPopup" PlacementTarget="{Binding ElementName=UserBtn}" Placement="Bottom" StaysOpen="False">
                     <Border Background="White" Padding="10">
-                        <StackPanel Width="200" Height="100">
-                            <TextBox Text="Login"  Margin="5"/>
-                            <PasswordBox  Margin="5"/>
-                            <Button Content="Sign in"  Margin="5"/>
-                        </StackPanel>
+                        <Grid Width="200" Height="200">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Text="Login form" 
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center" 
+                                       FontSize="15"
+                                        Width="100"
+                                       />
+                        </Grid>
                     </Border>
                 </Popup>
 
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Roll up" Cursor="Hand"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Screen" Cursor="Hand"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="Exit" Cursor="Hand"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="&#xE921;" 
+                        Cursor="Hand"
+                        Click="RollUp_Click"
+                        FontFamily="Segoe MDL2 Assets"/>
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="&#xE922;" 
+                        Cursor="Hand"
+                        Click="Screen_Click" 
+                        FontFamily="Segoe MDL2 Assets"
+                        />
+                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="&#xE8BB;" 
+                        Cursor="Hand"
+                        Click="Exit_Click"
+                        FontFamily="Segoe MDL2 Assets"
+                        />
             </StackPanel>
         </Grid>
         <Grid>

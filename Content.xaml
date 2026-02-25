@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MyApp"
-             mc:Ignorable="d" Background="White"
+             mc:Ignorable="d" Background="#F0F2F5"
              d:DesignHeight="450" d:DesignWidth="800">
 
     <Grid>
@@ -18,8 +18,8 @@
 
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Border Width="200" Height="200" Background="White" 
-                                BorderBrush="Black" BorderThickness="1" 
+                        <Border Width="200" Height="200" Background="#F0F2F5" 
+                                BorderBrush="Black" BorderThickness="2" 
                                 CornerRadius="2" Margin="10">
                             <Grid>
                                 <Grid.RowDefinitions>

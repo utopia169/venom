@@ -5,10 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MyApp"
              mc:Ignorable="d" 
-             Height="70" d:DesignWidth="800" Background="#F0F2F5">
+             Height="35" d:DesignWidth="800" Background="#F0F2F5">
     <Grid MouseLeftButtonDown="TopPanel_MouseLeftButtonDown" Background="#F0F2F5">
         <Grid.RowDefinitions>
-            <RowDefinition Height="35"/>
             <RowDefinition Height="35"/>
         </Grid.RowDefinitions>
         <Grid>
@@ -19,53 +18,74 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Orientation="Horizontal">
 
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File" Cursor="Hand"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File" Cursor="Hand"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File" Cursor="Hand"/>
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="File" Cursor="Hand"/>
-            </StackPanel>
-
-            <StackPanel Grid.Column="2" Orientation="Horizontal">
-
-                <Button Name="UserBtn" Click="UserBtn_Click" 
-                        FontFamily="Segoe MDL2 Assets" 
-                        Content="&#xE77B;" 
-                        Height="25"  
-                        Margin="3,3,10,3" 
-                        Width="40" 
-                        FontSize="20" 
-                        Cursor="Hand" 
-                        HorizontalContentAlignment="Center" 
-                        VerticalContentAlignment="Top">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="3"/>
-                        </Style>
-                    </Button.Resources>
+                <!--MAIN BTN-->
+                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Margin="5,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="&#xE80F;" 
+                                   FontFamily="Segoe MDL2 Assets" 
+                                   VerticalAlignment="Center" 
+                                   Margin="0,0,5,0"/>
+                        <TextBlock Text="Main" 
+                                   VerticalAlignment="Center" 
+                                   FontSize="12"/>
+                    </StackPanel>
                 </Button>
 
-                <Popup Name="LoginPopup" PlacementTarget="{Binding ElementName=UserBtn}" Placement="Bottom" StaysOpen="False">
-                    <Border Background="White" Padding="10">
-                        <Grid Width="200" Height="200">
-                            <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                            </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" Text="Login form" 
-                                       HorizontalAlignment="Center" 
-                                       VerticalAlignment="Center" 
-                                       FontSize="15"
-                                        Width="100"
-                                       />
-                        </Grid>
+                <!--LIBRARY BTN-->
+                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Margin="5,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="&#xE8A1;"
+                                   FontFamily="Segoe MDL2 Assets"
+                                   VerticalAlignment="Center"
+                                   Margin="0,0,5,0"/>
+                        <TextBlock Text="Library"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!--ADD TRAIN BTN-->
+
+                <Button Name="AddTrainBtn" 
+                        Margin="5,0"
+                        Cursor="Hand"
+                        Background="Transparent" 
+                        Click="AddTrainClick"
+                        BorderThickness="0">
+                    <StackPanel Orientation="Horizontal">
+                        
+                        <TextBlock Text="&#xE710;"
+                        FontFamily="Segoe MDL2 Assets"
+                                   VerticalAlignment="Center"
+                                   Margin="0,0,5,0"
+                                   FontWeight="Bold"/>
+                        
+                        <TextBlock Text="Add Train"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Popup Name="CreateTrainPopup" PlacementTarget="{Binding ElementName=AddTrainBtn}" Placement="Bottom" StaysOpen="False">
+                    <Border Background="White" BorderBrush="Gray" BorderThickness="3" CornerRadius="1">
+                        <StackPanel Width="220">
+                            <TextBlock Text="Training data" Margin="0,0,0,4" HorizontalAlignment="Center"/>
+                            <DatePicker x:Name="TrainDataPicker" Margin="0,0,0,15"/>
+
+                            <TextBlock Text="Training type" Margin="0,0,0,5"/>
+                            <ComboBox x:Name="TrainigTypeComboBox">
+                                <ComboBoxItem Content="Chest workout" IsSelected="True"/>
+                                <ComboBoxItem Content="Back workout"/>
+                                <ComboBoxItem Content="Leg workout"/>
+                                <ComboBoxItem Content="Arm workout"/>
+                                <ComboBoxItem Content="Shoulder workout"/>
+                                <ComboBoxItem Content="Cardio workout"/>
+                            </ComboBox>
+                            <Button Content="Add card" Width="100" Height="25" Click="ConfirmAddTrain_Click" Margin="0,0,0,3"/>
+                        </StackPanel>
                     </Border>
                 </Popup>
+            </StackPanel>
 
+            <!--OPEN/CLOSE-->
+            <StackPanel Grid.Column="2" Orientation="Horizontal">
                 <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="&#xE921;" 
                         Cursor="Hand"
                         Click="RollUp_Click"
@@ -82,40 +102,5 @@
                         />
             </StackPanel>
         </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="auto"/>
-            </Grid.ColumnDefinitions>
-        </Grid>
-        <StackPanel Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal">
-            <Button Content="Add Train" Name="AddTrainBtn" Height="30" Width="75" Margin="2" Background="LightGreen" Click="AddTrainClick">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="5"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Popup Name="CreateTrainPopup" PlacementTarget="{Binding ElementName=AddTrainBtn}" Placement="Bottom" StaysOpen="False">
-                <Border Background="White" BorderBrush="Gray" BorderThickness="3" CornerRadius="1">
-                    <StackPanel Width="220">
-                        <TextBlock Text="Training data" Margin="0,0,0,4" HorizontalAlignment="Center"/>
-                        <DatePicker x:Name="TrainDataPicker" Margin="0,0,0,15"/>
-
-                        <TextBlock Text="Training type" Margin="0,0,0,5"/>
-                        <ComboBox x:Name="TrainigTypeComboBox">
-                            <ComboBoxItem Content="Chest workout" IsSelected="True"/>
-                            <ComboBoxItem Content="Back workout"/>
-                            <ComboBoxItem Content="Leg workout"/>
-                            <ComboBoxItem Content="Arm workout"/>
-                            <ComboBoxItem Content="Shoulder workout"/>
-                            <ComboBoxItem Content="Cardio workout"/>
-                        </ComboBox>
-                        <Button Content="Add card" Width="100" Height="25" Click="ConfirmAddTrain_Click" Margin="0,0,0,3"/>
-                    </StackPanel>
-                </Border>
-            </Popup>
-        </StackPanel>
     </Grid>
 </UserControl>

@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\MyApp\\traincard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\MyApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Content.xaml",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\MyApp\\Content.xaml",
               "RelativeDocumentMoniker": "Content.xaml",
@@ -86,7 +86,7 @@
               "RelativeDocumentMoniker": "TopPanel.xaml.cs",
               "ToolTip": "Z:\\VisualStudio\\MyProject\\MyApp\\TopPanel.xaml.cs",
               "RelativeToolTip": "TopPanel.xaml.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwFgAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T18:11:57.248Z",
               "EditorCaption": ""

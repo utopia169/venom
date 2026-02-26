@@ -10,10 +10,6 @@ namespace MyApp
         {
             InitializeComponent();
         }
-        private void UserBtn_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            LoginPopup.IsOpen = true;
-        }
         private void AddTrainClick(object sender, RoutedEventArgs e) {
         CreateTrainPopup.IsOpen = true;
         }

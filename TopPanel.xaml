@@ -63,14 +63,47 @@
                                    VerticalAlignment="Center"/>
                     </StackPanel>
                 </Button>
-                <Popup Name="CreateTrainPopup" PlacementTarget="{Binding ElementName=AddTrainBtn}" Placement="Bottom" StaysOpen="False">
-                    <Border Background="White" BorderBrush="Gray" BorderThickness="3" CornerRadius="1">
-                        <StackPanel Width="220">
-                            <TextBlock Text="Training data" Margin="0,0,0,4" HorizontalAlignment="Center"/>
-                            <DatePicker x:Name="TrainDataPicker" Margin="0,0,0,15"/>
+                <Popup Name="CreateTrainPopup" 
+                       PlacementTarget="{Binding ElementName=AddTrainBtn}" 
+                       Placement="Bottom" 
+                       StaysOpen="False"
+                       AllowsTransparency="True">
+                    <Border Background="White" 
+                            BorderBrush="#E4E7EB" 
+                            BorderThickness="1" 
+                            CornerRadius="10"
+                            Margin="5"
+                            Padding="15">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="15" 
+                                              ShadowDepth="3"
+                                              Opacity="0.1"
+                                              Color="Black"/>
+                        </Border.Effect>
+                        <StackPanel Width="200">
+                            
+                            <TextBlock Text="New workout"
+                                       FontSize="16"
+                                       FontWeight="SemiBold"
+                                       Foreground="#333333"
+                                       HorizontalAlignment="Center"
+                                       Margin="0,0,0,15"/>
 
-                            <TextBlock Text="Training type" Margin="0,0,0,5"/>
-                            <ComboBox x:Name="TrainigTypeComboBox">
+                            <TextBlock Text="Date workout"
+                                       FontSize="12"
+                                       Foreground="#888888"
+                                       Margin="0,0,0,5"/>
+                            
+                            <DatePicker x:Name="TrainDataPicker" 
+                                        Margin="0,0,0,15"
+                                        Height="28"/>
+
+                            <TextBlock Text="Workout type" 
+                                       Margin="0,0,0,5"
+                                       FontSize="12"
+                                       Foreground="#888888"/>
+
+                            <ComboBox x:Name="TrainigTypeComboBox" Margin="0,0,0,20" Height="28">
                                 <ComboBoxItem Content="Chest workout" IsSelected="True"/>
                                 <ComboBoxItem Content="Back workout"/>
                                 <ComboBoxItem Content="Leg workout"/>
@@ -78,7 +111,21 @@
                                 <ComboBoxItem Content="Shoulder workout"/>
                                 <ComboBoxItem Content="Cardio workout"/>
                             </ComboBox>
-                            <Button Content="Add card" Width="100" Height="25" Click="ConfirmAddTrain_Click" Margin="0,0,0,3"/>
+                            <Button Content="Add card" 
+                                    Click="ConfirmAddTrain_Click" 
+                                    Height="32"
+                                    Background="#2ECC71"
+                                    Foreground="White"
+                                    FontWeight="SemiBold"
+                                    BorderThickness="0"
+                                    Cursor="Hand">
+                                <Button.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="5"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+
                         </StackPanel>
                     </Border>
                 </Popup>

@@ -52,7 +52,9 @@
                                            VerticalAlignment="Center" />
                                 
                                 <Grid Grid.Row="3">
-                                    <Button Content="&#xE70F;" HorizontalAlignment="Left" 
+                                    <Button Content="&#xE70F;" 
+                                            Click="EditTrain_Click"
+                                            HorizontalAlignment="Left" 
                                             Cursor="Hand" 
                                             BorderThickness="0" 
                                             Background="Transparent"
@@ -91,6 +93,73 @@
 
             </ItemsControl>
         </ScrollViewer>
+
+        <!--EDIT TRAIN POPUP-->
+        
+        <Popup x:Name="EditTrainPopup" 
+               Placement="Center"
+               StaysOpen="False"
+               AllowsTransparency="True">
+            <Border Width="220"
+                    Background="White" 
+                    BorderBrush="Gray"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Padding="15">
+                <StackPanel>
+                    <TextBlock Text="Edit"
+                               FontWeight="Bold"
+                               Margin="0,0,0,10"
+                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="New Data"
+                               Foreground="Gray" 
+                               Margin="0,0,0,5"/>
+
+                    <DatePicker x:Name="EditDatePicker"
+                                Margin="0,0,0,10"/>
+
+                    <TextBlock Text="New type"
+                               Foreground="Gray" 
+                               Margin="0,0,0,5"/>
+
+                    <ComboBox x:Name="EditTypeComboBox"
+                              Margin="0,0,0,15">
+                        <ComboBoxItem Content="Chest workout"/>
+                        <ComboBoxItem Content="Back workout"/>
+                        <ComboBoxItem Content="Leg workout"/>
+                        <ComboBoxItem Content="Arm workout"/>
+                        <ComboBoxItem Content="Shoulder workout"/>
+                        <ComboBoxItem Content="Cardio workout"/>
+                    </ComboBox>
+                    <Grid Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0"
+                                Content="Cancel"
+                                Click="CancelEdit_Click"
+                                Background="#E0E0E0"
+                                Foreground="#333333"
+                                BorderThickness="0"
+                                Height="30"
+                                Margin="0,0,5,0"
+                                Cursor="Hand"/>
+
+                        <Button Grid.Column="1"
+                            Content="💾 Save"
+                            Click="SaveEdit_Click"
+                            Background="#4A90E2"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Height="30"
+                            Cursor="Hand"/>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Popup>
+        
     </Grid>
     
 </UserControl>

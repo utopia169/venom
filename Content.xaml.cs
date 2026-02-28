@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace MyApp
@@ -32,6 +33,71 @@ namespace MyApp
                 }
             }
 
+        }
+        private TrainCard _trainToEdit;
+        private void EditTrain_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+            _trainToEdit = btn.DataContext as TrainCard;
+            if (_trainToEdit != null) 
+            {
+                if (DateTime.TryParse(_trainToEdit.Date, out DateTime oldDate))
+                {
+                    EditDatePicker.SelectedDate = oldDate;
+                }
+                foreach (ComboBoxItem item in EditTypeComboBox.Items)
+                {
+                    if (item.Content.ToString() == _trainToEdit.Type)
+                    {
+                        EditTypeComboBox.SelectedItem = item;
+                        break;
+                    }
+                }
+                EditTrainPopup.IsOpen = true;
+            }
+        }
+        private void SaveEdit_Click(object sender, RoutedEventArgs e)
+        {
+            if (_trainToEdit != null)
+            { 
+                var mainWindow = Window.GetWindow(this) as MainWindow;
+                if (mainWindow != null)
+                {
+                    string newDate = EditDatePicker.SelectedDate.HasValue
+                        ? EditDatePicker.SelectedDate.Value.ToString("dd.MM.yyyy")
+                        : _trainToEdit.Date;
+
+                    var selectedTypeItem = EditTypeComboBox.SelectedItem as ComboBoxItem;
+                    string newType = selectedTypeItem != null ? selectedTypeItem.Content.ToString() : _trainToEdit.Type;
+
+                    string newEmoji = "🏋️";
+
+                    if (newType.Contains("Chest") || newType.Contains("Back")) newEmoji = "🏋️";
+                    else if (newType.Contains("Leg")) newEmoji = "🦵";
+                    else if (newType.Contains("Arm")) newEmoji = "💪";
+                    else if (newType.Contains("Shoulder")) newEmoji = "🦾";
+                    else if (newType.Contains("Cardio")) newEmoji = "🏃‍";
+
+                    int index = mainWindow.Trains.IndexOf(_trainToEdit);
+                    if (index != -1)
+                    {
+                        mainWindow.Trains[index] = new TrainCard
+                        {
+                            Date = newDate,
+                            Type = newType,
+                            Emoji = newEmoji,
+                        };
+                    }
+                }
+                EditTrainPopup.IsOpen = false;
+                _trainToEdit = null;
+            }
+        }
+
+        private void CancelEdit_Click(object sender, RoutedEventArgs e)
+        {
+            EditTrainPopup.IsOpen = false;
+            _trainToEdit = null;
         }
     }
 }

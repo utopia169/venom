@@ -19,3 +19,5 @@ Z:\VisualStudio\MyProject\MyApp\obj\Debug\MyApp.pdb
 Z:\VisualStudio\MyProject\MyApp\obj\Debug\MyApp.exe.config
 Z:\VisualStudio\MyProject\MyApp\obj\Debug\Content.g.cs
 Z:\VisualStudio\MyProject\MyApp\obj\Debug\Content.baml
+Z:\VisualStudio\MyProject\MyApp\obj\Debug\TrainDetailsView.g.cs
+Z:\VisualStudio\MyProject\MyApp\obj\Debug\TrainDetailsView.baml

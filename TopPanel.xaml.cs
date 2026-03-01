@@ -85,5 +85,27 @@ namespace MyApp
             window.WindowState = WindowState.Minimized;
             }
         }
+        public void SetMode(bool isMainPage)
+        {
+            if (isMainPage)
+            {
+                AddTrainBtn.Visibility = Visibility.Visible;
+                FilterBtn.Visibility = Visibility.Visible;
+            }
+            else 
+            { 
+                AddTrainBtn.Visibility = Visibility.Collapsed;
+                FilterBtn.Visibility = Visibility.Collapsed;
+            }
+        }
+        private void MainBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = Window.GetWindow(this) as MainWindow;
+            if (mainWindow != null)
+            {
+                mainWindow.GoToMain();
+            }
+        }
+
     }
 }

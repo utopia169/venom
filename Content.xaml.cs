@@ -99,5 +99,20 @@ namespace MyApp
             EditTrainPopup.IsOpen = false;
             _trainToEdit = null;
         }
+
+        private void TrainCard_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Border clickedBorder = sender as Border;
+            TrainCard selectedTrain = clickedBorder.DataContext as TrainCard;
+
+            if (selectedTrain != null) 
+            {
+                var mainWindow = Window.GetWindow(this) as MainWindow;
+                if (mainWindow != null) 
+                {
+                    mainWindow.GoToTrainDetails(selectedTrain);
+                }
+            }
+        }
     }
 }

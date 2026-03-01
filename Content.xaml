@@ -19,8 +19,12 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Border Width="200" Height="200" Background="#F0F2F5" 
-                                BorderBrush="Black" BorderThickness="2" 
-                                CornerRadius="15" Margin="10" Cursor="Hand">
+                                BorderBrush="Black" 
+                                BorderThickness="2" 
+                                CornerRadius="15" 
+                                Margin="10" 
+                                Cursor="Hand"
+                                MouseLeftButtonUp="TrainCard_Click">
                             <Border.Effect>
                                 <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.1"/>
                             </Border.Effect>

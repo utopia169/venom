@@ -79,6 +79,8 @@
 
         <Button Grid.Row="2"
                 Content="+ Add Exercises"
+                x:Name="AddExerciseBtn"
+                Click="AddExerciseBtn_Click"
                 Height="45"
                 Background="#4A90E2"
                 Foreground="White"
@@ -93,5 +95,53 @@
                 </Style>
             </Button.Resources>
         </Button>
+
+
+        <Popup
+            x:Name="ExercisePopup"
+            PlacementTarget="{Binding ElementName=AddExerciseBtn }"
+            Placement="Top"
+            StaysOpen="False"
+            AllowsTransparency="True">
+            <Border Width="250"
+                    MaxHeight="300"
+                    Background="White"
+                    BorderBrush="#E4E7EB"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Margin="10"
+                    Padding="10">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="15"
+                                      ShadowDepth="3"
+                                      Opacity="0.1"
+                                      Color="Black"/>
+                </Border.Effect>
+
+                <StackPanel>
+                    <TextBlock Text="Selected Exercise"
+                               FontSize="16"
+                               FontWeight="SemiBold"
+                               Foreground="#333"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,10"/>
+
+                    <ListBox x:Name="ExerciseListBox"
+                             BorderThickness="0"
+                             Foreground="Transparent"
+                             SelectionChanged="ExercisesListBox_SelectionChanged">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}"
+                                           FontSize="14"
+                                           Padding="5,8"
+                                           Cursor="Hand"
+                                           Foreground="Black"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+            </Border>
+        </Popup>
     </Grid>
 </UserControl>

@@ -17,6 +17,7 @@ namespace MyApp
             { "Cardio workout", new List<string> { "Running", "Cycling", "Jump Rope" } }
         };
 
+
         public TrainDetailsView(TrainCard train)
         {
             InitializeComponent();
@@ -26,6 +27,40 @@ namespace MyApp
 
             ExercisesList.ItemsSource  = _currentTrain.Exercises;
 
+        }
+
+        private void AddExerciseBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            string currentType = _currentTrain.Type;
+
+            if (_exerciseLibrary.ContainsKey(currentType))
+            {
+                ExerciseListBox.ItemsSource = _exerciseLibrary[currentType];
+            }
+            else
+            {
+                ExerciseListBox.ItemsSource = null;
+            }
+
+            ExercisePopup.IsOpen = true;
+        }
+
+        private void ExercisesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ExerciseListBox.SelectedItem != null)
+            {
+                string selectedExerciseName = ExerciseListBox.SelectedItem.ToString();
+
+                ExercisesItem newExercise = new ExercisesItem()
+                {
+                    Name = selectedExerciseName
+                };
+
+                _currentTrain.Exercises.Add(newExercise);
+
+                ExercisePopup.IsOpen = false;
+                ExerciseListBox.SelectedItem = null;
+            }
         }
     }
 }

@@ -39,7 +39,7 @@ namespace MyApp
 
             if (MainWindow != null) 
             {
-                MainWindow.Trains.Add(new TrainCard
+                MainWindow.Trains.Add(new WorkoutCard
                 {
                     Date = selectedDate,
                     Type = selectedType,

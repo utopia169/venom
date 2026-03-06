@@ -29,7 +29,6 @@ Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp.exe.config
 Z:\VisualStudio\MyProject\venom\obj\Debug\Content.g.cs
 Z:\VisualStudio\MyProject\venom\obj\Debug\MainWindow.g.cs
 Z:\VisualStudio\MyProject\venom\obj\Debug\TopPanel.g.cs
-Z:\VisualStudio\MyProject\venom\obj\Debug\TrainDetailsView.g.cs
 Z:\VisualStudio\MyProject\venom\obj\Debug\App.g.cs
 Z:\VisualStudio\MyProject\venom\obj\Debug\GeneratedInternalTypeHelper.g.cs
 Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp_MarkupCompile.cache
@@ -37,10 +36,11 @@ Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp_MarkupCompile.lref
 Z:\VisualStudio\MyProject\venom\obj\Debug\Content.baml
 Z:\VisualStudio\MyProject\venom\obj\Debug\MainWindow.baml
 Z:\VisualStudio\MyProject\venom\obj\Debug\TopPanel.baml
-Z:\VisualStudio\MyProject\venom\obj\Debug\TrainDetailsView.baml
 Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp.g.resources
 Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp.Properties.Resources.resources
 Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp.csproj.GenerateResource.cache
 Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp.csproj.CoreCompileInputs.cache
 Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp.exe
 Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp.pdb
+Z:\VisualStudio\MyProject\venom\obj\Debug\WorkoutDetailsView.g.cs
+Z:\VisualStudio\MyProject\venom\obj\Debug\WorkoutDetailsView.baml

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-Z:\VisualStudio\MyProject\MyApp\obj\Debug\
+Z:\VisualStudio\MyProject\venom\obj\Debug\
 MyApp
 none
 false
 DEBUG;TRACE
-Z:\VisualStudio\MyProject\MyApp\App.xaml
-4993781216
+Z:\VisualStudio\MyProject\venom\App.xaml
+41970428587
 
-10-710057931
+101013329841
 13-38814620
-Content.xaml;MainWindow.xaml;TopPanel.xaml;TrainDetailsView.xaml;
+Content.xaml;MainWindow.xaml;TopPanel.xaml;WorkoutDetailsView.xaml;
 
-True
+False
 

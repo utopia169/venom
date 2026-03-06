@@ -5,7 +5,7 @@ namespace MyApp
 {
     public partial class TrainDetailsView : UserControl
     {
-        private TrainCard _currentTrain;
+        private WorkoutCard _currentTrain;
 
         private Dictionary<string, List<string>> _exerciseLibrary = new Dictionary<string, List<string>> 
         {
@@ -18,7 +18,7 @@ namespace MyApp
         };
 
 
-        public TrainDetailsView(TrainCard train)
+        public TrainDetailsView(WorkoutCard train)
         {
             InitializeComponent();
             _currentTrain = train;
@@ -60,6 +60,36 @@ namespace MyApp
 
                 ExercisePopup.IsOpen = false;
                 ExerciseListBox.SelectedItem = null;
+            }
+        }
+        private void AddSet_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Button btnAdd = sender as Button;
+            ExercisesItem exercises = btnAdd?.Tag as ExercisesItem;
+
+            if (exercises != null) 
+            {
+                exercises.SetItems.Add(new SetItem()
+                {
+                    Weight = 0,
+                    Reps = 0
+                });
+            }
+        }
+        private void RemoveSet_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+            SetItem set = btn?.Tag as SetItem;
+
+            if (set == null) return;
+
+            foreach (var exercise in _currentTrain.Exercises)
+            {
+                if (exercise.SetItems.Contains(set))
+                {
+                    exercise.SetItems.Remove(set);
+                    break;
+                }
             }
         }
     }

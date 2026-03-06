@@ -55,15 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="TrainCard.cs" />
+    <Compile Include="WorkoutCard.cs" />
     <Compile Include="Content.xaml.cs">
       <DependentUpon>Content.xaml</DependentUpon>
     </Compile>
     <Compile Include="TopPanel.xaml.cs">
       <DependentUpon>TopPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TrainDetailsView.xaml.cs">
-      <DependentUpon>TrainDetailsView.xaml</DependentUpon>
+    <Compile Include="WorkoutDetailsView.xaml.cs">
+      <DependentUpon>WorkoutDetailsView.xaml</DependentUpon>
     </Compile>
     <Page Include="Content.xaml">
       <SubType>Designer</SubType>
@@ -85,7 +85,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TrainDetailsView.xaml">
+    <Page Include="WorkoutDetailsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

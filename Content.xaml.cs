@@ -15,7 +15,7 @@ namespace MyApp
         {
             Button btn = sender as Button;
 
-            TrainCard trainToDelete = btn.DataContext as TrainCard;
+            WorkoutCard trainToDelete = btn.DataContext as WorkoutCard;
             if (trainToDelete != null)
             {
                 var result = MessageBox.Show($"Delete train for {trainToDelete.Date}?",
@@ -34,11 +34,11 @@ namespace MyApp
             }
 
         }
-        private TrainCard _trainToEdit;
+        private WorkoutCard _trainToEdit;
         private void EditTrain_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
-            _trainToEdit = btn.DataContext as TrainCard;
+            _trainToEdit = btn.DataContext as WorkoutCard;
             if (_trainToEdit != null) 
             {
                 if (DateTime.TryParse(_trainToEdit.Date, out DateTime oldDate))
@@ -81,7 +81,7 @@ namespace MyApp
                     int index = mainWindow.Trains.IndexOf(_trainToEdit);
                     if (index != -1)
                     {
-                        mainWindow.Trains[index] = new TrainCard
+                        mainWindow.Trains[index] = new WorkoutCard
                         {
                             Date = newDate,
                             Type = newType,
@@ -103,7 +103,7 @@ namespace MyApp
         private void TrainCard_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Border clickedBorder = sender as Border;
-            TrainCard selectedTrain = clickedBorder.DataContext as TrainCard;
+            WorkoutCard selectedTrain = clickedBorder.DataContext as WorkoutCard;
 
             if (selectedTrain != null) 
             {

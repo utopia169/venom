@@ -5,13 +5,13 @@ namespace MyApp
 {
     public partial class MainWindow : Window
     {
-        public ObservableCollection<TrainCard> Trains { get; set; }
+        public ObservableCollection<WorkoutCard> Trains { get; set; }
         private Content _mainContent;
         public MainWindow()
         {
             InitializeComponent();
 
-            Trains = new ObservableCollection<TrainCard>();
+            Trains = new ObservableCollection<WorkoutCard>();
             this.DataContext = this;
 
             _mainContent = new Content();
@@ -22,7 +22,7 @@ namespace MyApp
             MainContentArea.Content = _mainContent;
             TopPanelControl.SetMode(isMainPage:true);
         }
-        public void GoToTrainDetails(TrainCard train)
+        public void GoToTrainDetails(WorkoutCard train)
         {
             TrainDetailsView detailsView = new TrainDetailsView(train);
             MainContentArea.Content = detailsView;

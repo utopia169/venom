@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "Z:\\VisualStudio\\MyProject\\venom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\workoutdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:workoutdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|z:\\visualstudio\\myproject\\venom\\workoutdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:workoutdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\workoutcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:workoutcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\content.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:content.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\toppanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:toppanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|z:\\visualstudio\\myproject\\venom\\workoutdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:workoutdetailsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\workoutdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:workoutdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\content.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:content.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:toppanel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\toppanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:toppanel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:content.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|Z:\\VisualStudio\\MyProject\\venom\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9075A4B2-CAF5-456B-8003-02053B54566D}|MyApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -58,11 +58,12 @@
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-17T16:47:49.019Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Content.xaml",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\Content.xaml",
               "RelativeDocumentMoniker": "Content.xaml",
@@ -70,11 +71,12 @@
               "RelativeToolTip": "Content.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-19T16:58:01.755Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TopPanel.xaml",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\TopPanel.xaml",
               "RelativeDocumentMoniker": "TopPanel.xaml",
@@ -82,16 +84,17 @@
               "RelativeToolTip": "TopPanel.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-22T09:48:09.849Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "WorkoutDetailsView.xaml",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutDetailsView.xaml",
               "RelativeDocumentMoniker": "WorkoutDetailsView.xaml",
-              "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutDetailsView.xaml*",
-              "RelativeToolTip": "WorkoutDetailsView.xaml*",
+              "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutDetailsView.xaml",
+              "RelativeToolTip": "WorkoutDetailsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-03-01T11:46:35.773Z",
               "IsPinned": true,
@@ -99,13 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "WorkoutDetailsView.xaml.cs",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutDetailsView.xaml.cs",
               "RelativeDocumentMoniker": "WorkoutDetailsView.xaml.cs",
-              "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutDetailsView.xaml.cs*",
-              "RelativeToolTip": "WorkoutDetailsView.xaml.cs*",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAswFoAAAAaAAAAAAAAAA==",
+              "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutDetailsView.xaml.cs",
+              "RelativeToolTip": "WorkoutDetailsView.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAGEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T11:47:14.245Z",
               "EditorCaption": ""
@@ -118,46 +121,48 @@
               "RelativeDocumentMoniker": "TopPanel.xaml.cs",
               "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\TopPanel.xaml.cs",
               "RelativeToolTip": "TopPanel.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwGwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T18:11:57.248Z"
+              "WhenOpened": "2026-02-19T18:11:57.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Content.xaml.cs",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\Content.xaml.cs",
               "RelativeDocumentMoniker": "Content.xaml.cs",
               "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\Content.xaml.cs",
               "RelativeToolTip": "Content.xaml.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwHAAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAQwGAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-21T12:51:20.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "WorkoutCard.cs",
+              "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutCard.cs",
+              "RelativeDocumentMoniker": "WorkoutCard.cs",
+              "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutCard.cs*",
+              "RelativeToolTip": "WorkoutCard.cs*",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAowA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T17:31:12.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:45:37.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WorkoutCard.cs",
-              "DocumentMoniker": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutCard.cs",
-              "RelativeDocumentMoniker": "WorkoutCard.cs",
-              "ToolTip": "Z:\\VisualStudio\\MyProject\\venom\\WorkoutCard.cs",
-              "RelativeToolTip": "WorkoutCard.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAYwC8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T17:31:12.81Z",
+              "WhenOpened": "2026-02-19T17:45:37.331Z",
               "EditorCaption": ""
             }
           ]

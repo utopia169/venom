@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MyApp"
              mc:Ignorable="d" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              Background="#F0F2F5"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid
@@ -43,7 +44,41 @@
                     <TextBlock
                         Text="{Binding Duration}"
                         FontSize="16"
-                        Foreground="Gray"/>
+                        Foreground="Gray"
+                        Background="Transparent"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+
+                <TextBlock 
+                    Text="Workout start time"
+                    Margin="0,0,8,0"
+                    Foreground="Gray"
+                    FontSize="15"/>
+                <xctk:TimePicker 
+                    x:Name="WorkoutStartTime"
+                    Height="auto"
+                    Value="{Binding StartTime, Mode=TwoWay}"
+                    Format="ShortTime"
+                    ShowButtonSpinner="False"
+                    Margin="0,0,10,0"
+                    Background="Transparent"
+                    FontSize="15"/>
+
+                <TextBlock
+                    Text="Workout end time"
+                    Margin="0,0,8,0"
+                    Foreground="Gray"
+                    FontSize="15"/>
+                <xctk:TimePicker 
+                    x:Name="WorkoutEndTime"
+                    Height="auto"
+                    Format="ShortTime"
+                    Value="{Binding EndTime, Mode=TwoWay}"
+                    ShowButtonSpinner="False"
+                    Background="Transparent"
+                    BorderThickness="1"
+                    FontSize="15"/>
             </StackPanel>
         </StackPanel>
 

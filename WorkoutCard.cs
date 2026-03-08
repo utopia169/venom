@@ -1,7 +1,8 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 
 namespace MyApp
@@ -12,21 +13,51 @@ namespace MyApp
         public string Type { get; set; }
         public string Emoji { get; set; }
 
-        private string _duration = "00:00:00";
-        public string Duration
-        {
-            get => _duration;
-            set {  _duration = value; OnPropertyChanged(); }
-        }
-
         public ObservableCollection<ExercisesItem> Exercises { get; set; } = new ObservableCollection<ExercisesItem>();
 
+        private DateTime? _startTime;
+        public DateTime? StartTime
+        {
+            get => _startTime;
+            set
+            {
+                _startTime = value;
+                OnPropertyChanged(); 
+                OnPropertyChanged(nameof(Duration)); 
+            }
+        }
+
+        private DateTime? _endTime;
+        public DateTime? EndTime
+        {
+            get => _endTime;
+            set
+            {
+                _endTime = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(Duration));
+            }
+        }
+
+        public string Duration
+        {
+            get
+            {
+                if (StartTime == null || EndTime == null)
+                    return "--:--";
+
+                TimeSpan diff = EndTime.Value - StartTime.Value;
+
+                if (diff.TotalMinutes < 0)
+                    return "--:--";
+                return diff.ToString(@"hh\:mm");
+            }
+        }
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "") =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
     }
-
-    public class SetItem : INotifyPropertyChanged
+        public class SetItem : INotifyPropertyChanged
     {
         private double _weight;
         private int _reps;

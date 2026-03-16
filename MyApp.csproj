@@ -70,6 +70,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LibraryView.xaml.cs">
+      <DependentUpon>LibraryView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WorkoutCard.cs" />
     <Compile Include="Content.xaml.cs">
       <DependentUpon>Content.xaml</DependentUpon>
@@ -81,6 +84,10 @@
       <DependentUpon>WorkoutDetailsView.xaml</DependentUpon>
     </Compile>
     <Page Include="Content.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LibraryView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -27,6 +27,21 @@ namespace MyApp
             }
         }
 
+        public class LibraryExercise : INotifyPropertyChanged
+        {
+            private int _id;
+            private string _name;
+            private string _category;
+
+            public int Id { get => _id; set { _id = value; OnPropertyChanged(); } }
+            public string Name { get => _name; set { _name = value; OnPropertyChanged(); } }
+            public string Category { get => _category; set { _category = value; OnPropertyChanged(); } }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+            public void OnPropertyChanged([CallerMemberName] string prop = "") =>
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+        }
+
         private DateTime? _endTime;
         public DateTime? EndTime
         {

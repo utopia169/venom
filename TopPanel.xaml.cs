@@ -107,5 +107,10 @@ namespace MyApp
             }
         }
 
+        private void LibraryBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow?.GoToLibrary();
+        }
     }
 }

@@ -36,7 +36,7 @@
                 </Button>
 
                 <!--LIBRARY BTN-->
-                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Margin="5,0">
+                <Button Background="Transparent" BorderThickness="0" Cursor="Hand" Margin="5,0" x:Name="LibraryBtn" Click="LibraryBtn_Click">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="&#xE8A1;"
                                    FontFamily="Segoe MDL2 Assets"
@@ -156,20 +156,25 @@
 
             <!--OPEN/CLOSE-->
             <StackPanel Grid.Column="2" Orientation="Horizontal">
-                <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="&#xE921;" 
+                <Button Width="40" 
+                        Height="25" 
+                        Margin="3" 
+                        BorderBrush="Black" 
+                        Content="&#xE921;" 
                         Cursor="Hand"
                         Click="RollUp_Click"
+                        Background="Transparent"
                         FontFamily="Segoe MDL2 Assets"/>
                 <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="&#xE922;" 
                         Cursor="Hand"
                         Click="Screen_Click" 
                         FontFamily="Segoe MDL2 Assets"
-                        />
+                        Background="Transparent"/>
                 <Button Width="40" Height="25" Margin="3" BorderBrush="Black" Content="&#xE8BB;" 
                         Cursor="Hand"
                         Click="Exit_Click"
                         FontFamily="Segoe MDL2 Assets"
-                        />
+                        Background="Transparent"/>
             </StackPanel>
         </Grid>
     </Grid>

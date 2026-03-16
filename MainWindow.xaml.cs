@@ -28,5 +28,11 @@ namespace MyApp
             MainContentArea.Content = detailsView;
             TopPanelControl.SetMode(isMainPage: false);
         }
+
+        public void GoToLibrary()
+        {
+            MainContentArea.Content = new LibraryView();
+            TopPanelControl.SetMode(isMainPage: false);
+        }
     }
 }

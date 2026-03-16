@@ -63,3 +63,5 @@ Z:\VisualStudio\MyProject\venom\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 Z:\VisualStudio\MyProject\venom\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 Z:\VisualStudio\MyProject\venom\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 Z:\VisualStudio\MyProject\venom\obj\Debug\MyApp.csproj.Up2Date
+Z:\VisualStudio\MyProject\venom\obj\Debug\LibraryView.g.cs
+Z:\VisualStudio\MyProject\venom\obj\Debug\LibraryView.baml

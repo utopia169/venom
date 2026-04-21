@@ -167,7 +167,7 @@
                         <Button Content="Add card" 
                                     Click="ConfirmAddTrain_Click" 
                                     Height="32"
-                                    Background="#2ECC71"
+                                    Background="#4A90E2"
                                     Foreground="White"
                                     FontWeight="SemiBold"
                                     BorderThickness="0"

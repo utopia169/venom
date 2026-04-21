@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Runtime.Remoting.Channels;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace MyApp
@@ -46,6 +48,24 @@ namespace MyApp
             }
 
             ExercisePopup.IsOpen = true;
+        }
+
+        private void DeleteExerciseBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+
+            ExercisesItem exercises = btn?.Tag as ExercisesItem;
+
+            var result = MessageBox.Show(
+                "Delete this exercise?",
+                "Confirm",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Warning);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                _currentTrain.Exercises.Remove(exercises);
+            }
         }
 
         private void ExercisesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -95,5 +115,6 @@ namespace MyApp
                 }
             }
         }
+
     }
 }
